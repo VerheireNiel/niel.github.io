@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://samltest.id/saml/idp">
+<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+<md:KeyDescriptor use="signing">
+<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+<X509Data>
+<X509Certificate>MIIDEjCCAfqgAwIBAgIIbWC96yzkyngwDQYJKoZIhvcNAQEFBQAwJzElMCMGA1UEAxMcY29scnV5dC1vaWRjLXByb2ZpbGUtczAxLXYwMTAeFw0yMDA2MjQxMjU1MzRaFw0yMzA0MTUxMjU1MzRaMCcxJTAjBgNVBAMTHGNvbHJ1eXQtb2lkYy1wcm9maWxlLXMwMS12MDEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCuP8v1PJLlKXY2s/a3eoJ8q+3ivbSaP19Yy6InJhp4t3WS+Yqnhs0MZa2u6jj8POqRhQdWAgt1O5IrO6OicnohaX6mQJIPZLxKl3E3xbgGd0p1YHInOw0biflFrD6dIWBlEl8tI52S9nh8pEMqYnW/qps9VTUrJ5hKPxi7xNRXat0bfdIfvWtav3eL5vR7eaS8UDFcRGBPlFXGq81nyD0rc4uRsDXwRZ81KLmY0LgwZD+zRD1/fbFi/9d0DkSES66P2+JGmPdqiHR0eSSy63fZfxGP6Q0omu+9YVC5TVPI+55/hPqPcinZhMhsCDlYBFbzU7RlxZQC0deHdNppBme5AgMBAAGjQjBAMB0GA1UdDgQWBBQ74tZxov2RU+zzBJsrGJ/j6aYOejAfBgNVHSMEGDAWgBQ74tZxov2RU+zzBJsrGJ/j6aYOejANBgkqhkiG9w0BAQUFAAOCAQEAQlYAHG6L87EEPSUo13Ak69xUWQVDGCY0TF/Gu2sZVFiAOwVoZWQf2xaw+mx+PZJ/mlbZhLJN0Ul0BhWuXec9ea0L/8VL1/XJADD7J6JSELn9ZS/K+aL843SincG6CWAPqSkC/V3acUwKToALAxQEflRBC+SNaonbIiYgy0LmBk3luh8kT/vYp2WVQi2qZ+Euvoo5URkVXSRb+GdQ6cM2xsIl7xp/FaQPPf8KoT443j5I8Ae5Y5iOiUhk7X+B79WWX+3dE19nQfMstn29VPbIaNfhxroHRDGkfiClQquIjXrTaJIXlNg1yCFh3qAHDv03sIsxfeb+bYHk0+GLTEsbGA==</X509Certificate>
+</X509Data>
+</KeyInfo>
+</md:KeyDescriptor>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://logon.devlocal.colruytgroup.com/mga/sps/testidp/saml20/login" index="1"/>
+</md:SPSSODescriptor>
+<md:Organization>
+<md:OrganizationName xml:lang="en">cg</md:OrganizationName>
+<md:OrganizationDisplayName xml:lang="en">cg</md:OrganizationDisplayName>
+<md:OrganizationURL xml:lang="en"/>
+</md:Organization>
+</md:EntityDescriptor>
